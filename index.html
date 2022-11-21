@@ -8,30 +8,24 @@
 </head>
 <body>
 
-<div class="center">
-
-  <div class="pozadi">
-
-<h1 class="jmeno">Kouskova první hra v JavaScriptu - hádání čísel</h1>
-
-<h2><i>Máš 10 pokusů na uhodnutí vygenerovaného čísla v rozsahu 1 až 100</i></h2>
-
-  </div>
-  <hr>
-
-<div class="form">
-  <div class="tip"><b><h2><label for="guessField">Zadej tvůj tip: (číslo)</label></h2></b></div>
-  <input type="number" min="1" max="100" required id="guessField" class="guessField">
-  <input type="submit" value="Zkusit" class="guessSubmit">
+<div class="pozadi">
+  <h1 class="jmeno">Kouskova první hra v JavaScriptu - hádání čísel</h1>
+  <h2><i>Máš 10 pokusů na uhodnutí vygenerovaného čísla v rozsahu 1 až 100</i></h2>
 </div>
 
+<hr>
+
+<div class="form">
+  <div class="tip">
+    <b><h2><label for="guessField">Zadej tvůj tip: (číslo)</label></h2></b>
+  </div>
+            <input type="number" min="1" max="100" required id="guessField" class="guessField">
+            <input type="submit" value="Zkusit" class="guessSubmit">
+</div>
 <div class="resultParas">
   <p class="guesses"></p>
   <p class="lastResult"></p>
   <p class="lowOrHi"></p>
-</div>
-
-
 </div>
 
 <script src="script.js"></script>
