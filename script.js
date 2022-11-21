@@ -50,7 +50,7 @@ function setGameOver() {
     guessSubmit.disabled = true;
     resetButton = document.createElement('button');
     resetButton.textContent = 'Nová hra';
-    lowOrHi.style.backgroundColor = 'grey';
+    lowOrHi.style.backgroundColor = '';
     document.body.appendChild(resetButton);
     resetButton.addEventListener('click', resetGame);
 }
@@ -67,6 +67,6 @@ function resetGame() {
     guessSubmit.disabled = false;
     guessField.value = '';
     guessField.focus();
-    lastResult.style.backgroundColor = 'grey';
+    lastResult.style.backgroundColor = '';
     randomNumber = Math.floor(Math.random() * 100) + 1;
 }
