@@ -50,6 +50,7 @@ function setGameOver() {
     guessSubmit.disabled = true;
     resetButton = document.createElement('button');
     resetButton.textContent = 'Nová hra';
+    lowOrHi.style.backgroundColor = 'grey';
     document.body.appendChild(resetButton);
     resetButton.addEventListener('click', resetGame);
 }

@@ -42,11 +42,6 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
     .pozadi {
         background-color: cyan;
         padding: 3%;
@@ -57,12 +52,19 @@ body {
         padding-bottom: 5%;
     }
 
-    .center {
-        text-align: center;
-    }
     .form {
+        padding: 1%;
+    }
+
+    .guesses {
+        padding: 3%;
+    }
+
+    .lastResult {
         padding: 2%;
     }
 
-
+    .lowOrHi {
+        padding: 2%;
+    }
 }
