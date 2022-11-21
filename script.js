@@ -17,11 +17,12 @@ function checkGuess() {
 
     if (userGuess === randomNumber) {
         lastResult.textContent = 'Výborně, uhodl/a jsi číslo.';
+        lowOrHi.style.backgroundColor = 'grey';
         lastResult.style.backgroundColor = 'green';
         lowOrHi.textContent = '';
         setGameOver();
     } else if (guessCount === 10) {
-        lastResult.textContent = '!!!Došly ti pokusy, prohrál jsi.!!!';
+        lastResult.textContent = '! Došly ti pokusy, prohrál/a jsi.!';
         lowOrHi.textContent = '';
         guesses.textContent = 'Bylo to číslo: ' + randomNumber;
         setGameOver();
@@ -30,8 +31,10 @@ function checkGuess() {
         lastResult.style.backgroundColor = '#f64a00';
         if(userGuess < randomNumber) {
             lowOrHi.textContent = 'Poslední zadaný pokus byl příliš nízko.' ;
+            lowOrHi.style.backgroundColor = 'yellow';
         } else if(userGuess > randomNumber) {
             lowOrHi.textContent = 'Poslední zadaný pokus byl příliš vysoko.';
+            lowOrHi.style.backgroundColor = 'yellow';
         }
     }
 
@@ -63,6 +66,6 @@ function resetGame() {
     guessSubmit.disabled = false;
     guessField.value = '';
     guessField.focus();
-    lastResult.style.backgroundColor = 'white';
+    lastResult.style.backgroundColor = 'grey';
     randomNumber = Math.floor(Math.random() * 100) + 1;
 }

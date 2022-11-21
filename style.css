@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pozadi {
+    background-color: cyan;
+    padding: 2%;
+}
+
+.jmeno {
+    text-decoration: underline;
+    padding-bottom: 1%;
+}
+
+.center {
+    text-align: center;
+}
+
+.form {
+    padding: 1%;
+}
+
+.tip {
+    padding-bottom: 1%;
+}
+
+body {
+    background-color: grey;
+}
+
+.guesses {
+    padding: 1%;
+}
+
+.lastResult {
+    padding: 1%;
+}
+
+.lowOrHi {
+    padding: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .pozadi {
+        background-color: cyan;
+        padding: 3%;
+    }
+
+    .jmeno {
+        text-decoration: underline;
+        padding-bottom: 5%;
+    }
+
+    .center {
+        text-align: center;
+    }
+    .form {
+        padding: 2%;
+    }
+
+
+}
