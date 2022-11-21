@@ -4,8 +4,9 @@
 }
 
 .pozadi {
-    background-color: cyan;
+    background-color: black;
     padding: 2%;
+    color: white;
 }
 
 .jmeno {
@@ -26,7 +27,7 @@
 }
 
 body {
-    background-color: grey;
+    background-color: darkcyan;
     text-align: center;
 }
 
@@ -44,7 +45,6 @@ body {
 
 @media only screen and (max-width: 600px) {
     .pozadi {
-        background-color: cyan;
         padding: 3%;
     }
 
