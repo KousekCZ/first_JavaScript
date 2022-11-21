@@ -27,7 +27,7 @@ function checkGuess() {
         setGameOver();
     } else {
         lastResult.textContent = 'Špatně, zkus jiné číslo!';
-        lastResult.style.backgroundColor = 'red';
+        lastResult.style.backgroundColor = '#f64a00';
         if(userGuess < randomNumber) {
             lowOrHi.textContent = 'Poslední zadaný pokus byl příliš nízko.' ;
         } else if(userGuess > randomNumber) {
