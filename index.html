@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>JavaScript game</title>
+</head>
+<body>
+<h1>První JavaScript Hra</h1>
+
+<div class="form">
+  <label for="guessField">Zadej tvůj tip: (číslo)</label>
+  <input type="number" min="1" max="100" required id="guessField" class="guessField">
+  <input type="submit" value="Submit guess" class="guessSubmit">
+</div>
+
+<div class="resultParas">
+  <p class="guesses"></p>
+  <p class="lastResult"></p>
+  <p class="lowOrHi"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
